@@ -9,6 +9,12 @@ int main(int argc, char *argv[]) {
         // fork failed
         fprintf(stderr, "fork failed\n");
         exit(1);
+    } else if (rc == 0){
+        //child (nex process)
+        printf("child (pid:%d)\n", (int) getpid());
+    } else {
+        //present goes down this path (main)
+        printf("parent of %d (pid:%d)\n", rc, (int) getpid());
     }
-    
+    return 0;
 }
