@@ -1,7 +1,7 @@
 CC     = gcc
 CFLAGS = -Wall
 TARGET = a.out
-SRCS   = 5.1.c
+SRCS   = 5.3.c
 OBJS   = $(SRCS:.c=.o)
 LINCDIR = -I../inc
 LIBDIR =
