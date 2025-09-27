@@ -16,4 +16,4 @@ $(TARGET): $(OBJS)
 all: $(TARGET)
 
 clean:
-	-rm -f $(OBJS) $(TARGET) *.d *.o *.txt
+	-rm -f $(OBJS) $(TARGET) *.d *.o *.txt *.output
